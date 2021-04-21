@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
-df = pd.read_csv('/home/swanand/Desktop/Python Projects/Car Price Prediction/Car details v3.csv')
+df = pd.read_csv('Car details v3.csv')
 df.dropna(inplace=True)
 df['mileage'] = df['mileage'].apply(lambda x: float(x.split()[0]))
 df['engine'] = df['engine'].apply(lambda x: float(x.split()[0]))
